@@ -1,0 +1,105 @@
+/* Reset some default margin and padding */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 40px auto;
+  max-width: 900px;
+  background: #f9fafb;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Heading styling */
+h2 {
+  text-align: center;
+  color: #004a99;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+form input {
+  flex: 1 1 200px;
+  padding: 12px 15px;
+  font-size: 1.1rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  border-color: #004a99;
+  outline: none;
+  background-color: #e6f0ff;
+}
+
+form button {
+  background-color: #004a99;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #003366;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background-color: white;
+  font-size: 1rem;
+}
+
+thead {
+  background-color: #004a99;
+  color: white;
+}
+
+th, td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+/* Action button inside table */
+.action-btn {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #c0392b;
+}
