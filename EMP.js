@@ -1,6 +1,6 @@
 
 
-let employees = [];
+let employees = JSON.parse(localStorage.getItem("employees"))||[];
 let editIndex = null;
 
 const form = document.getElementById("employee-form");
@@ -8,6 +8,10 @@ const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email")
 const roleInput = document.getElementById("role");
 const tableBody = document.querySelector("#employee-table tbody");
+
+function saveToLocalStorage() {
+    localStorage.setItem("employees",JSON.stringify(employees));
+}
 
 form.addEventListener("submit",function(e){
     e.preventDefault();
@@ -26,6 +30,7 @@ form.addEventListener("submit",function(e){
         editIndex=null;
         form.querySelector("button").innerHTML="Add Employess";
     }
+     saveToLocalStorage();
     form.reset();
     renderTable();
 })
@@ -58,5 +63,10 @@ function editEmployee(index){
 
 function deleteEmployee(index){
     employees.splice(index,1);
+    saveToLocalStorage
     renderTable();
 }
+window.onload = function() {
+    renderTable();
+    getName();
+};
