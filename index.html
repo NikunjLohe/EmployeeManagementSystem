@@ -3,31 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Mangement Portalt</title>
-    <link rel="stylesheet" href="EMP.css">
+     <link rel="stylesheet" href="styles.css">
+    <title>Employee Management Portal</title>
 </head>
 <body>
-    <h2>Employee Managment Portal</h2>
-    <form id="employee-form">
+    <h2>Employee Management Portal</h2>
+    <form id="Employee-form">
         <input type="text" id="name" placeholder="Name" required>
-        <input type="text" id="email" placeholder="Email" required>
-        <input type="text" id="role" placeholder="Role"required >
-        <button id="submit">Add Employees</button>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="role" placeholder="Role" required>
+        <button type="submit">Add Employee</button>
     </form>
-    <table id="employee-table">
+    <table id="Employee-table">
         <thead>
             <tr>
-        
                 <th>Name</th>
                 <th>Email</th>
                 <th>Role</th>
                 <th>Action</th>
             </tr>
         </thead>
-        <tbody>
-
-        </tbody>
+        <tbody></tbody>
     </table>
-    <script src="EMP.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
